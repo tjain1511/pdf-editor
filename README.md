@@ -9,9 +9,7 @@ files and works offline once loaded.
 
 ## Demo
 
-[![PDF Editor demo](docs/demo.gif)](docs/demo.mp4)
-
-The preview above plays at 3× speed. [Watch the full demo video (MP4, 1:18)](docs/demo.mp4).
+https://github.com/user-attachments/assets/45a0cf82-347f-4fb1-a581-fb0b08d7b64c
 
 ## Getting started
 
