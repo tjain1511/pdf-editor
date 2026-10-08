@@ -5,6 +5,54 @@ browser, and download the result. Nothing is uploaded: parsing, rendering and
 writing all happen on your device, so the app can be deployed as plain static
 files and works offline once loaded.
 
+## Demo
+
+[![PDF Editor demo](docs/demo.gif)](docs/demo.mp4)
+
+The preview above plays at 3× speed. [Watch the full demo video (MP4, 1:18)](docs/demo.mp4).
+
+## Getting started
+
+Requires Node.js 20.19+ or 22.12+ (needed by Vite 8).
+
+```bash
+git clone https://github.com/tjain1511/pdf-editor.git
+cd pdf-editor
+npm install
+npm run dev
+```
+
+Open the URL Vite prints (usually http://localhost:5173). To host it, run
+`npm run build` and serve the `dist/` folder from any static file host.
+
+## Usage
+
+1. **Open a PDF.** Drag a file onto the window, or click **Open PDF** (`Ctrl/⌘+O`).
+2. **Pick a tool** from the toolbar and click or drag on the page:
+   | Tool | Key | What it does |
+   |---|---|---|
+   | Select | `V` | Move, resize, rotate or delete elements |
+   | Add text | `T` | Click to place a new text box |
+   | Edit existing text | `E` | Click a line to rewrite it (or double-click any line) |
+   | Draw | `P` | Freehand pen |
+   | Highlight | `H` | Highlight, underline or strike through text |
+   | Shapes | `R` `O` `L` `A` | Rectangle, ellipse, line, arrow |
+   | Insert image | `I` | Add a PNG/JPEG/WebP/GIF |
+   | Signature | `S` | Draw a signature or upload a photo of one |
+   | Checkbox | `K` | Place a tick box |
+   | Cover / redact | `X` | Cover an area with a solid box |
+3. **Style the selection** with the context bar that appears under the toolbar
+   (font, size, colour, alignment, stroke and so on).
+4. **Manage pages** from the left sidebar (`Ctrl/⌘+\`): drag thumbnails to
+   reorder, or use a page's menu to rotate, duplicate, delete, extract, or insert
+   blank pages and pages from another PDF.
+5. **Download** the result with **Download** (`Ctrl/⌘+S`).
+
+Other handy shortcuts: undo/redo `Ctrl/⌘+Z` / `Ctrl/⌘+Shift+Z`, search
+`Ctrl/⌘+F`, zoom `Ctrl/⌘+=` / `Ctrl/⌘+-`, fit width `Ctrl/⌘+0`, fit page
+`Ctrl/⌘+9`, duplicate `Ctrl/⌘+D`, nudge with the arrow keys (hold `Shift` for
+10pt steps), and `Esc` to deselect.
+
 ## Features
 
 - Open PDFs via file picker or drag-and-drop (password-protected files supported)
