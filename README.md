@@ -5,6 +5,8 @@ browser, and download the result. Nothing is uploaded: parsing, rendering and
 writing all happen on your device, so the app can be deployed as plain static
 files and works offline once loaded.
 
+**Live demo:** https://pdf-editor-three-chi.vercel.app/
+
 ## Demo
 
 [![PDF Editor demo](docs/demo.gif)](docs/demo.mp4)
